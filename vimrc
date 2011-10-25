@@ -104,13 +104,10 @@ endif
 " ---------------
 " Color
 " ---------------
-if &term =~ '^\(xterm\|screen\)$' && $COLORTERM == 'gnome-terminal'
+if &term =~ '^\(xterm\|screen\)' && $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
 
-if (&term == 'xterm' || &term =~? '^screen') && hostname() == 'cannabis'
-    set t_Co=256
-endif
 set background=dark
 "colorscheme ir_black_mod
 colorscheme oceandeep
