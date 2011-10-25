@@ -2,8 +2,7 @@
 
 ## Installation
 
- 1. `git clone https://mutewinter@github.com/mutewinter/dot_vim.git` in your home folder.
- 2. `mv dot_vim.git .vim`
+ 1. `git clone https://wari@github.com/wari/dot_vim.git .vim` in your home folder.
  3. `cd .vim`
  3. `rake vim:link` to make the .vimrc symbolic link.
  4. Run Vim and type `:BundleInstall` to install the plugins, which are managed by [Vundle](https://github.com/gmarik/vundle).
