@@ -44,6 +44,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-speeddating'
 Bundle 'vim-scripts/hexHighlight.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/gitv'
 Bundle 'godlygeek/tabular'
 Bundle 'mileszs/ack.vim'
 " Automatic Helpers
@@ -103,8 +104,16 @@ endif
 " ---------------
 " Color
 " ---------------
+if &term =~ '^\(xterm\|screen\)$' && $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
+
+if (&term == 'xterm' || &term =~? '^screen') && hostname() == 'cannabis'
+    set t_Co=256
+endif
 set background=dark
-colorscheme ir_black_mod
+"colorscheme ir_black_mod
+colorscheme oceandeep
 set cursorline
 
 " ---------------
@@ -410,3 +419,6 @@ endif
 " ---------------
 map <leader>ws :%s/\s\+$//e<CR>
 command! FixTrailingWhiteSpace :%s/\s\+$//e
+
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
