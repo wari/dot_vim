@@ -96,6 +96,18 @@ elseif has('gui_macvim')
   if has("gui_running")
     set guioptions=egmrt
   endif
+elseif has("gui_running")
+  if has("gui_gtk2")
+    set guifont=ProggySquareTT\ 13
+  elseif has("gui_photon")
+    set guifont=ProggySquareTT:s13
+  elseif has("gui_kde")
+    set guifont=ProggySquareTT/13/-1/5/50/0/0/0/1/0
+  elseif has("x11")
+    set guifont=-*-courier-medium-r-normal-*-*-180-*-*-m-*-*
+  else
+    set guifont=ProggySquareTT:h13:cDEFAULT
+  endif
 endif
 
 " ----------------------------------------
