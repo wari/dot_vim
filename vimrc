@@ -122,7 +122,7 @@ if &term =~ '^\(xterm\|screen\)' && $COLORTERM == 'gnome-terminal'
 endif
 
 set background=dark
-colorscheme oceandeep
+colorscheme baycomb
 set cursorline
 
 " ---------------
