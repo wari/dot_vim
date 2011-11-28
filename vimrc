@@ -34,7 +34,7 @@ Bundle 'mutewinter/LustyJuggler'
 Bundle 'mutewinter/vim-indent-guides'
 Bundle 'dickeytk/status.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'mutewinter/ir_black_mod'
+Bundle 'oceandeep'
 Bundle 'godlygeek/csapprox'
 Bundle 'Rykka/ColorV'
 " OS Integration
