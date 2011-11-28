@@ -34,7 +34,7 @@ Bundle 'mutewinter/LustyJuggler'
 Bundle 'mutewinter/vim-indent-guides'
 Bundle 'dickeytk/status.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'oceandeep'
+Bundle 'vim-scripts/Color-Sampler-Pack'
 Bundle 'godlygeek/csapprox'
 Bundle 'Rykka/ColorV'
 " OS Integration
@@ -520,9 +520,6 @@ endif " endif has('ruby')
 map <leader>ws :%s/\s\+$//e<CR>
 command! FixTrailingWhiteSpace :%s/\s\+$//e
 
-<<<<<<< HEAD
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-=======
 " ---------------
 " Quick spelling fix (first item in z= list)
 " ---------------
@@ -539,4 +536,5 @@ endfunction
 
 command! QuickSpellingFix call QuickSpellingFix()
 nmap <silent> <leader>z :QuickSpellingFix<CR>
->>>>>>> f4f4369072c93653551746cbdfd46ca2d6fea07c
+
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
